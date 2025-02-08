@@ -573,83 +573,80 @@
                                         Envoyer</button>
                                 </div>
                             </div> -->
+                    <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"></div>
                         <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator" method="POST" 
-                                action="https://formspree.io/f/mvgzqvpv" enctype="multipart/form-data" novalidate>
-                            <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                                <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator" method="POST" 
-                                      action="https://formspree.io/f/mvgzqvpv" enctype="multipart/form-data">
-                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <input name="prenom" class="contact-name form-control" id="name" type="text" 
-                                            placeholder="Prénom" required>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12">
-                                            <input name="nom" class="contact-email form-control" id="L_name" type="text" 
-                                            placeholder="Nom" required>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <input name="email" class="contact-subject form-control" id="email" type="email" 
-                                            placeholder="Votre Email" required>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <textarea class="contact-message" id="message" rows="6" placeholder="Votre Message"
-                                            required></textarea>
-                                        </div>
-                                        <!-- Subject Button -->
-                                        <div class="btn-form col-sm-12">
-                                            <button type="submit" class="btn btn-fill btn-block" id="form-submit">
-                                                Envoyer
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            
-                            <!-- Confirmation message after sending -->
-                            <script>
-                            document.getElementById("contactForm").addEventListener("submit", function(event) {
-                                event.preventDefault();  // Prevents the default form submission
-                                document.getElementById("msgSubmit").classList.remove("hidden");
-                                document.getElementById("msgSubmit").textContent = "Message envoyé avec succès !";
-                            
-                                // The form submission to Formspree is handled automatically here
-                                // For advanced users: You can also use AJAX to submit form data dynamically
-                            });
-                            </script>
-                            
-                            <style>
-                            /* Responsive styles for smaller screens */
-                            @media (max-width: 767px) {
-                                .form-control {
-                                    margin-bottom: 15px;
-                                }
-                                .btn-form {
-                                    padding-top: 15px;
-                                }
-                            }
-                            
-                            .hidden {
-                                display: none;
-                            }
-                            
-                            .text-center {
-                                text-align: center;
-                            }
-                            
-                            .contact-name, .contact-email, .contact-subject, .contact-message {
-                                width: 100%;
-                                margin-bottom: 15px;
-                            }
-                            
-                            #msgSubmit {
-                                color: green;
-                                font-weight: bold;
-                            }
-                            </style>                            
-                            
+                            action="https://formspree.io/f/mvgzqvpv" enctype="multipart/form-data" novalidate>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="row">
+                              <div class="col-md-6 col-sm-12">
+                                  <input name="prenom" class="contact-name form-control" id="name" type="text" 
+                                  placeholder="Prénom" required>
+                              </div>
+                              <div class="col-md-6 col-sm-12">
+                                  <input name="nom" class="contact-email form-control" id="L_name" type="text" 
+                                  placeholder="Nom" required>
+                              </div>
+                              <div class="col-sm-12">
+                                  <input name="email" class="contact-subject form-control" id="email" type="email" 
+                                  placeholder="Votre Email" required>
+                              </div>
+                              <div class="col-sm-12">
+                                  <textarea class="contact-message" id="message" rows="6" placeholder="Votre Message"
+                                  required></textarea>
+                              </div>
+                              <!-- Subject Button -->
+                              <div class="btn-form col-sm-12">
+                                  <button type="submit" class="btn btn-fill btn-block" id="form-submit">
+                                      Envoyer
+                                  </button>
+                              </div>
+                          </div>
                         </form>
+                      
+                      <!-- Confirmation message after sending -->
+                      <script>
+                      document.getElementById("contactForm").addEventListener("submit", function(event) {
+                          event.preventDefault();  // Prevents the default form submission
+                          document.getElementById("msgSubmit").classList.remove("hidden");
+                          document.getElementById("msgSubmit").textContent = "Message envoyé avec succès !";
+                      
+                          // The form submission to Formspree is handled automatically here
+                          // For advanced users: You can also use AJAX to submit form data dynamically
+                      });
+                      </script>
+                      
+                      <style>
+                      /* Responsive styles for smaller screens */
+                      @media (max-width: 767px) {
+                          .form-control {
+                              margin-bottom: 15px;
+                          }
+                          .btn-form {
+                              padding-top: 15px;
+                          }
+                      }
+                      
+                      .hidden {
+                          display: none;
+                      }
+                      
+                      .text-center {
+                          text-align: center;
+                      }
+                      
+                      .contact-name, .contact-email, .contact-subject, .contact-message {
+                          width: 100%;
+                          margin-bottom: 15px;
+                      }
+                      
+                      #msgSubmit {
+                          color: green;
+                          font-weight: bold;
+                      }
+                      </style>
+                      
                     </div>
+                    
                     <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
                         <div class="mh-map">
                             
